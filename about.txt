@@ -1,1 +1,6 @@
-Ett spännande spel om flaggor
+"Flag Game"
+- A game for gamers who like flags.
+
+Ett spännande spel om flaggor. Vilket är landet?
+
+"Lycka till"
