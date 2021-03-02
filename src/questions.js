@@ -99,8 +99,24 @@ const questions = [
 
     ],
     correctAnswer: 'Ecuador'
-  }
+  },
 
+  {
+    questionFlagUrl: 'https://images.emojiterra.com/google/android-11/512px/1f1f8-1f1ee.png',
+    alternatives: [
+      {
+        name: 'Nordkorea',
+      },
+      {
+        name: 'Slovenien',
+      },
+      {
+        name: 'Chile',
+      },
+
+    ],
+    correctAnswer: 'Ecuador'
+  }
 
 
 
