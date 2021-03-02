@@ -65,7 +65,26 @@ const questions = [
 
     ],
     correctAnswer: 'Kiribati'
+  },
+
+  {
+    questionFlagUrl: 'https://images.emojiterra.com/google/android-11/512px/1f1f3-1f1ff.png',
+    alternatives: [
+      {
+        name: 'Nya Zeeland',
+      },
+      {
+        name: 'Australien',
+      },
+      {
+        name: 'Falklandsöarna',
+      },
+
+    ],
+    correctAnswer: 'Nya Zeeland'
   }
+
+
 
 ];
 
