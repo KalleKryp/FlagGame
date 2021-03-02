@@ -1,7 +1,7 @@
 export default [
   {
     emoji: "🇦🇩",
-    name: "Andorra"
+    name: "andorra"
   },
   {
     emoji: "🇦🇪",
