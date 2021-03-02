@@ -16,6 +16,8 @@ function App() {
       <GuessingBox info={questions[2]} />
       <GuessingBox info={questions[3]} />
       <GuessingBox info={questions[4]} />
+      <GuessingBox info={questions[5]} />
+      <GuessingBox info={questions[6]} />
       <hr></hr>
 
       <div></div>
