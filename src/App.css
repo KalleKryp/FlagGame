@@ -6,8 +6,9 @@
 }
 
 .App-header {
-  background: rgba(57, 47, 209, 0.322);
+  background: rgb(192, 186, 196);
   min-height: 10vh;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -25,6 +26,7 @@
 .Flag {
   background-color: rgb(192, 186, 196);
   min-height: 1vh;
+  min-width: 20%;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -32,10 +34,11 @@
   font-size: calc(3px + 2vmin);
   color: rgb(0, 0, 0);
   margin: 10px 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
   padding: 0px 10px;
-  border-radius: 15%;
-  border-width: 1px;
+  border-radius: 25px;
+  border-width: 2px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.247);
 }
