@@ -15,6 +15,21 @@ function App() {
           {name}
         </h1>
       </header>
+      <ShowGuesses />
+      <hr></hr>
+
+      <div></div>
+
+    </div>
+
+  )
+}
+
+function ShowGuesses(props) {
+
+
+  return (
+    <div>
       <GuessingBox info={questions[0]} />
       <GuessingBox info={questions[1]} />
       <GuessingBox info={questions[2]} />
@@ -22,12 +37,7 @@ function App() {
       <GuessingBox info={questions[4]} />
       <GuessingBox info={questions[5]} />
       <GuessingBox info={questions[6]} />
-      <hr></hr>
-
-      <div></div>
-
     </div>
-
   )
 }
 
