@@ -1,19 +1,15 @@
-import React from 'react'
-import './App.css'
-import './questions'
-import questions from './questions'
+import React from "react";
+import "./App.css";
+import "./questions";
+import questions from "./questions";
 
 function App() {
-  const name = 'Gissa flaggan'
-  const today = new Date().toLocaleDateString()
+  const name = "Gissa flaggan";
 
   return (
-    <div className='App'>
-
-      <header className='App-header'>
-        <h1>
-          {name}
-        </h1>
+    <div className="App">
+      <header className="App-header">
+        <h1>{name}</h1>
       </header>
       <ShowGuesses />
       <hr></hr>
@@ -42,58 +38,48 @@ function ShowGuesses(props) {
 }
 
 function GuessingBox(props) {
-
-
   let reply1 = "Fel";
   let reply2 = "Fel";
   let reply3 = "Fel";
 
-  if (props.info.alternatives[0].name == props.info.correctAnswer)
-    reply1 = "Rätt!"
+  if (props.info.alternatives[0].name === props.info.correctAnswer)
+    reply1 = "Rätt!";
 
-  if (props.info.alternatives[1].name == props.info.correctAnswer)
-    reply2 = "Rätt!"
+  if (props.info.alternatives[1].name === props.info.correctAnswer)
+    reply2 = "Rätt!";
 
-  if (props.info.alternatives[2].name == props.info.correctAnswer)
-    reply3 = "Rätt!"
-
+  if (props.info.alternatives[2].name === props.info.correctAnswer)
+    reply3 = "Rätt!";
 
   return (
     <div className="GuessingBox">
       <hr></hr>
-      <p><img src={props.info.questionFlagUrl}></img></p>
+      <p>
+        <img src={props.info.questionFlagUrl} alt="Flag.txt"></img>
+      </p>
 
-      <Flag title={props.info.alternatives[0].name} >{reply1}</Flag>
-      <Flag title={props.info.alternatives[1].name} >{reply2}</Flag>
-      <Flag title={props.info.alternatives[2].name} >{reply3}</Flag>
-
-
-
+      <Flag title={props.info.alternatives[0].name}>{reply1}</Flag>
+      <Flag title={props.info.alternatives[1].name}>{reply2}</Flag>
+      <Flag title={props.info.alternatives[2].name}>{reply3}</Flag>
     </div>
-  )
-
+  );
 }
-
-
 
 function Flag(props) {
   const [showContent, setShowContent] = React.useState(false);
 
-
   let childrenElement = null;
   if (showContent) {
-    childrenElement = <div className='ArticleChildren'>{props.children}</div>;
+    childrenElement = <div className="ArticleChildren">{props.children}</div>;
   }
 
   return (
-    <div className='Flag'>
+    <div className="Flag">
       <h2 onClick={() => setShowContent(!showContent)}>{props.title}</h2>
       <em>{props.date}</em>
       {childrenElement}
-    </div>)
-
+    </div>
+  );
 }
 
-
-
-export default App
+export default App;
