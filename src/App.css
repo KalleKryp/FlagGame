@@ -6,7 +6,7 @@
 }
 
 .App-header {
-  background: rgb(255, 0, 0);
+  background: rgba(57, 47, 209, 0.322);
   min-height: 10vh;
   align-items: center;
   justify-content: center;
@@ -25,7 +25,7 @@
 .Flag {
   background-color: rgb(192, 186, 196);
   min-height: 1vh;
-  display: inline-block;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
