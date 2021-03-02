@@ -115,7 +115,7 @@ const questions = [
       },
 
     ],
-    correctAnswer: 'Ecuador'
+    correctAnswer: 'Slovenien'
   }
 
 
