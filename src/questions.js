@@ -82,7 +82,25 @@ const questions = [
 
     ],
     correctAnswer: 'Nya Zeeland'
+  },
+
+  {
+    questionFlagUrl: 'https://images.emojiterra.com/google/android-11/512px/1f1ea-1f1e8.png',
+    alternatives: [
+      {
+        name: 'Bali',
+      },
+      {
+        name: 'Georgien',
+      },
+      {
+        name: 'Ecuador',
+      },
+
+    ],
+    correctAnswer: 'Ecuador'
   }
+
 
 
 
